@@ -6,7 +6,7 @@
 /*   By: mskinner <v.golskiy@ya.ru>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 13:39:47 by mskinner          #+#    #+#             */
-/*   Updated: 2020/09/17 10:51:27 by mskinner         ###   ########.fr       */
+/*   Updated: 2020/09/17 16:47:46 by mskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -261,13 +261,13 @@ void						put_2d_player(t_info *info, int color);
 
 void						sort_sprite(t_info *info, t_player *player);
 void						translate_sprite(t_info *info,
-									t_player *player, t_sprite_ray *s_ray, int i);
+								t_player *player, t_sprite_ray *s_ray, int i);
 void						calculate_sprite_height(t_info *info,
-									t_sprite_ray *s_ray);
+								t_sprite_ray *s_ray);
 void						calculate_sprite_width(t_info *info,
-									t_sprite_ray *s_ray);
+								t_sprite_ray *s_ray);
 void						get_sprite_color(t_info *info,
-									t_sprite_ray *s_ray, int stripe);
+								t_sprite_ray *s_ray, int stripe);
 
 /*
 **		sprite_utils.c
@@ -293,10 +293,13 @@ int							main_loop(t_info *info);
 
 int							ft_write(t_info *info, unsigned char *str, int len);
 int							*color_unpack(int color);
-int							bmp_header(t_info *info, uint32_t imagesize, uint16_t bitcount);
-int							fill_buf(t_info *info, unsigned char *buf, int width_in_bytes);
+int							bmp_header(t_info *info,
+								uint32_t imagesize, uint16_t bitcount);
+int							fill_buf(t_info *info,
+								unsigned char *buf, int width_in_bytes);
 int							save_bmp(t_info *info);
-int							save_bmp2(t_info *info, uint32_t imagesize, int width_in_bytes);
+int							save_bmp2(t_info *info,
+								uint32_t imagesize, int width_in_bytes);
 
 /*
 **		exit.c
