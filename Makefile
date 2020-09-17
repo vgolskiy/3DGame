@@ -6,7 +6,7 @@
 #    By: mskinner <v.golskiy@ya.ru>                 +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/06 08:12:01 by mskinner          #+#    #+#              #
-#    Updated: 2020/09/17 01:12:23 by mskinner         ###   ########.fr        #
+#    Updated: 2020/09/17 11:21:21 by mskinner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = cub3D
 
 CC = gcc
 INCS = -I./includes -I./libft -I./mlx
-INCLIB = -Lmlx -lmlx -framework OpenGL -framework Appkit -Llibft -lft
+INCLIB = -Lmlx -lmlx -framework OpenGL -framework Appkit -Llibft -lft -lm
 CFLAGS = -Wall -Werror -Wextra $(INCS)
 LIBFT = ./libft
 MLX = ./mlx
@@ -49,4 +49,4 @@ re: fclean all
 
 bonus: all
 
-.PHONY: test bonus all clean fclean re
+.PHONY: bonus all clean fclean re
