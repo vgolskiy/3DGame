@@ -1,0 +1,21 @@
+R 643 487
+NO ./xpm/bookshelf.xpm
+SO ./xpm/Bricks.xpm
+WE ./xpm/TilledSoil.xpm
+EA ./xpm/WaterF1.xpm
+
+S ./xpm/barrel.xpm
+F 181, 155, 39
+C 138, 187, 231
+
+    111111
+    100101
+ 111102001
+ 1020000011111111
+ 1111110200000001
+      1100W111111
+      111111
+      
+  111
+  101
+  111
